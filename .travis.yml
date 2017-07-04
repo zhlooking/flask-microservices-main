@@ -18,7 +18,6 @@ before_script:
 script:
   - sh test.sh
 
-
 after_script:
   - docker-compose down
 
