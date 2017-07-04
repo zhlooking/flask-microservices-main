@@ -13,6 +13,7 @@ services:
         healthcheck:
             test: exit 0
 
+
     users-service:
         container_name: users-service
         build: https://github.com/zhlooking/flask-microservices-users.git
@@ -44,6 +45,7 @@ services:
                 condition: service_started
         links:
             - users-service
+
 
     nginx:
         container_name: nginx
